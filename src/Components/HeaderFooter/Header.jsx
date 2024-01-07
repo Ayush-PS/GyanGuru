@@ -17,7 +17,7 @@ const pages = [
   { id: 2, name: "Session", to: "/AppointmentForm" },
   { id: 3, name: "Doubts", to: "/ScheduleMeeting" },
   { id: 4, name: "Pomodoro", to: "/Pomodoro" },
-  { id: 5, name: "Exams Schedule", to: "/PeriodTracker" },
+  { id: 5, name: "Exams Schedule", to: "/ExamScheduler" },
   
 ];
 
