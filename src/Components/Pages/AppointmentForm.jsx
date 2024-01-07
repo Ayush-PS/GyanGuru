@@ -40,7 +40,7 @@ const AppointmentForm = () => {
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className={classes.appointmentFormContainer}>
-        <h2>Book an Appointment</h2>
+        <h2>Book an Session</h2>
         {isAppointmentBooked ? (
           <div>
             <p>Your appointment has been booked!</p>
@@ -51,7 +51,7 @@ const AppointmentForm = () => {
         ) : (
           <form onSubmit={handleSubmit}>
             <label className={classes.label}>
-              Patient Name:
+              Studnet Name:
               <input
                 className={classes.input}
                 type="text"

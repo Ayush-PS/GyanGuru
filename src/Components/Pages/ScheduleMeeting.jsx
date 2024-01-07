@@ -5,17 +5,17 @@ import { format } from "date-fns";
 import { motion } from "framer-motion";
 import classes from "../Styles/ScheduleMeeting.module.css";
 const names = [
-  "Dr Shree",
-  "Dr Ajay",
-  "Dr Vijay",
-  "Dr Verma",
-  "Dr Kirti",
-  "Dr Sharma",
-  "Dr Shivam",
-  "Dr Shivani",
-  "Dr Shivangi",
-  "Dr Shivansh",
-  "Dr Ayush",
+  "Shree Mam",
+  "Ajay Sir",
+  "Vijay Sir",
+  "Verma Sir",
+  "Kirti Mam",
+  "Sharma Sir",
+  "Shivam Sir",
+  "Shivani Mam",
+  " Shivangi Mam",
+  " Shivansh Sir",
+  " Ayush Sir",
 ];
 const getRandomPart = () => {
   const characters = "abcdefghijklmnopqrstuvwxyz";
@@ -61,7 +61,7 @@ const ScheduleMeeting = () => {
           fontWeight={"600"}
           margin={"1rem"}
         >
-          Schedule a Meeting
+          Clear your Doubt
         </Typography>
         <TextField
           label="Description of problem"
@@ -91,7 +91,7 @@ const ScheduleMeeting = () => {
         {scheduledMeeting && (
           <div className={classes["scheduled-meeting-info"]}>
             <Typography variant="h6" gutterBottom>
-              Scheduled a Meeting With Doctor:
+              Get your doubts cleared:
             </Typography>
             <Typography>
               Name: {names[Math.floor(Math.random() * names.length)]}

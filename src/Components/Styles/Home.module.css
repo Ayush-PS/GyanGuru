@@ -1,0 +1,112 @@
+.s1 {
+  background-image: url("https://img.freepik.com/premium-photo/romantic-back-school-beautiful-anime-artwork_802234-9195.jpg");
+  height: 80vh;
+  margin: 5rem;
+  background-size: cover;
+  background-position: center;
+}
+.head {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
+  color: white;
+  background-color: rgba(65, 65, 65, 0.6);
+}
+.head h2 {
+  color: white;
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 600;
+}
+.head p {
+  font-size: 2rem;
+}
+.s2 {
+  display: flex;
+  color: white;
+  margin: 7rem;
+  height: 70vh;
+  margin-top: 20vh;
+}
+.left {
+  height: 60vh;
+  width: 60vh;
+  border-radius: 10%;
+  transform: rotate(10deg);
+  z-index: 1;
+  position: relative;
+}
+.b1,
+.b2 {
+  position: absolute;
+  z-index: -1;
+  height: 60vh;
+  width: 60vh;
+  border-radius: 10%;
+  opacity: 0.3;
+}
+.b1 {
+  transform: rotate(22deg);
+}
+.b2 {
+  transform: rotate(45deg);
+}
+.right {
+  margin-left: 10rem;
+}
+.right h2 {
+  color: white;
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 600;
+}
+.right h4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.right p{
+    font-size: 1rem;
+}
+.s3{
+    display: flex;
+    flex-direction: column;
+  color: white;
+  margin: 7rem;
+  height: 80vh;
+  margin-top: 20vh;
+  background-color: rgb(58, 58, 58);
+  text-align: center;
+  padding: 2rem;
+  align-items: center;
+}
+.s3 h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 600;
+}
+.s3 p{
+    font-size: 1rem;
+}
+.des{
+    width: 50vw;
+}
+.com{
+    width: 80vw;
+    margin-top: 5vh;
+}
+.com div{
+    border: dotted;
+    border-color: rgb(173, 173, 173);
+    padding: 8vh;
+    margin: 2vh;
+}
+.com h2{
+    font-size: 2rem;
+}
+.com svg{
+    height: 5vh;
+    width: 5vh;
+}
