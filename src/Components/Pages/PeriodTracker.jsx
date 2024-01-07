@@ -56,7 +56,7 @@ const PeriodTracker = () => {
         />
       </div>
       <div className={css.calender}>
-        <h3>Your Next Period Dates</h3>
+        <h3>Your Schedule here</h3>
         <Calendar
           onChange={setSelectedDate}
           value={selectedDate}
