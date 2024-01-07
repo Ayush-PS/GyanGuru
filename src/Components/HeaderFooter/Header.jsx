@@ -14,10 +14,10 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 const pages = [
   { id: 1, name: "Home", to: "/" },
-  { id: 2, name: "AppointmentForm", to: "/AppointmentForm" },
+  { id: 2, name: "Session", to: "/AppointmentForm" },
   { id: 3, name: "Period Tracker", to: "/PeriodTracker" },
-  { id: 4, name: "ScheduleMeeting", to: "/ScheduleMeeting" },
-  { id: 5, name: "Emergency", to: "/Emergency" },
+  { id: 4, name: "Doubts", to: "/ScheduleMeeting" },
+  { id: 5, name: "Pomodoro", to: "/Pomodoro" },
   
 ];
 
@@ -88,7 +88,7 @@ function Header() {
                 textDecoration: "none",
               }}
             >
-              StreeShakti
+              Gyanguru
             </Typography>
 
             <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>

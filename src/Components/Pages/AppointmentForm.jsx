@@ -51,7 +51,7 @@ const AppointmentForm = () => {
         ) : (
           <form onSubmit={handleSubmit}>
             <label className={classes.label}>
-              Studnet Name:
+              Student's Name:
               <input
                 className={classes.input}
                 type="text"

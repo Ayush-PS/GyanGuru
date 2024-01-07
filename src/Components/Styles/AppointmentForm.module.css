@@ -15,14 +15,14 @@
   /* border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff; */
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.737);
   border-radius: 10px;
   backdrop-filter: blur(10px); 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
   
 }
 .appointmentFormContainer h2{
-  color: #052f58;
+  color: rgb(41, 40, 40);
   font-size: 2rem;
   margin: 1rem;
 }
@@ -46,8 +46,8 @@
 }
 
 .submitBtn {
-  background-color: #052f58;
-  color: #fff;
+  background-color: #000000;
+  color: #e1e0e0; 
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -59,13 +59,13 @@
 }
 
 .submitBtn:hover {
-  background-color: #0b4b8a;
-  align-items: center;
+   background-color: #939090;
+  color: #000000;
 }
 
 .bookAnotherBtn {
-  background-color: #052f58;
-  color: #fff;
+  background-color: #000000;
+  color: #e1e0e0; 
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -73,7 +73,7 @@
 }
 
 .bookAnotherBtn:hover {
-  background-color: #0b4b8a;
-  align-items: center;
+  background-color: #939090;
+  color: #000000;
 }
 

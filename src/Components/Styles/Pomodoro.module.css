@@ -4,7 +4,7 @@
   }
 .msch{
   text-align: center;
-  background-image: url("https://images.unsplash.com/photo-1563213126-a4273aed2016?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://www.metrolibrary.org/sites/default/files/2023-09/lofi-girl-desk-v0-k3lzu25qbs6b1.png");
   background-size: cover;
   height: 100vh; 
 }
@@ -17,43 +17,47 @@
   text-align:center;
 }
 .msch-container{
-  max-width: 400px;
+  max-width: 370px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ffc99d80;
+  background-color: rgba(255, 255, 255, 0.737);
   border-radius: 10px;
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(2px); 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  height: 340px;
 }
 .msch h2{
   font-size: 2.5rem;
-  color: rgb(5, 42, 109);
+  color: rgba(0, 0, 0, 0.883);
   margin-top: 0;
   padding-top: 2rem;
   text-align: center;
 }
 .msch h3{
   font-size: 1.5rem;
-  color: rgb(5, 42, 109);
+  color: rgb(38, 38, 38);
   margin-top: 2rem;
 }
 .msch ul{
   list-style: none;
   display: inline-block;
   font-size: 1rem;
-  color: rgb(247, 244, 238);
+  color: #1e1e1e;
   margin-top: 0.5rem;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
-  background-color:#001830;
-  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.737);
+  border-radius: 9px;
+  border: 1px solid #ffc99d80;
   align-content: center;
   width: 70%;
   padding-left: 0%;
 }
 .msch li{
   padding: 7px;
+  font-size: 16px;
+  font-weight: 600;
 
 }
 .li{
@@ -64,20 +68,20 @@
 }
 .msch label{
   font-size: 1.2rem;
-  color: rgb(0, 9, 26);
+  color: #0a0a0a;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .msch input{
   font-size: 0.8rem;
-  color: rgb(0, 9, 26);
+  color: rgb(0, 0, 0);
   border-color: rgb(191, 191, 191);
   border-radius: 4px;
   padding: 4px;
   margin-bottom: 4px;
 }
 .btndel{
-  color: rgb(2, 82, 106);
-  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
   font-size: small;
   border: none;
   border-radius: 4px;
@@ -90,10 +94,11 @@
 }
 .btndel:hover{
   background-color: #e1e0e0;
+  color: #000000;
 }
 .btn{
   color: white;
-  background-color: #052f58;
+  background-color: #000000;
   font-size: medium;
   border: none;
   border-radius: 4px;
@@ -104,7 +109,8 @@
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 .btn:hover{
-  background-color: #0e4b88;
+  background-color: #e1e0e0;
+  color: #000000;
 }
 .overlay {
     position: fixed;
@@ -122,7 +128,7 @@
     background-color: white;
     padding: 20px;
     font-size: x-large;
-    color: #052f58;
+    color: #000000;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }

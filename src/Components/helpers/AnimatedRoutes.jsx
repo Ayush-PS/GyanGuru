@@ -4,6 +4,7 @@ import PeriodTracker from "../Pages/PeriodTracker";
 import AppointmentForm from "../Pages/AppointmentForm";
 import { AnimatePresence } from "framer-motion";
 import React from 'react';
+import Pomodoro from "../Pages/Pomodoro";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -11,9 +12,11 @@ const AnimatedRoutes = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         {/* <Route path="/" element={<Home/>}/> */}
-        <Route path="/AppointmenForm" element={<AppointmentForm/>} />
+        <Route path="/AppointmentForm" element={<AppointmentForm/>} />
         <Route path="/ScheduleMeeting" element={<ScheduleMeeting/>} />
         <Route path="/PeriodTracker" element={<PeriodTracker/>} />
+        <Route path="/Pomodoro" element={<Pomodoro/>} />
+  
   
       </Routes>
     </AnimatePresence>
