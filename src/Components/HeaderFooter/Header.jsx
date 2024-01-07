@@ -69,7 +69,7 @@ function Header() {
                 textDecoration: "none",
               }}
             >
-              StreeShakti
+              GyanGuru
             </Typography>
 
             <Typography
@@ -88,7 +88,7 @@ function Header() {
                 textDecoration: "none",
               }}
             >
-              StreeShakti
+              GyanGuru
             </Typography>
 
             <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "none" } }}>
@@ -152,14 +152,14 @@ function Header() {
                   sx={{
                     my: 2,
                     mr: 7,
-                    color: "black",
+                    color: "white",
                     display: "block",
-                    fontWeight: "800",
+                    fontWeight: "500",
                     borderRadius: 2,
                     pl: "1.3rem",
                     pr: "1.3rem",
                     "&:hover": {
-                      backgroundColor: "#FFE6CA", // 50% transparency
+                      color: "orange", // 50% transparency
                     },
                   }}
                 >
