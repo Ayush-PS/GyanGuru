@@ -14,7 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 const pages = [
   { id: 1, name: "Home", to: "/" },
-  { id: 2, name: "AppointmenForm", to: "/AppointmenForm" },
+  { id: 2, name: "AppointmentForm", to: "/AppointmentForm" },
   { id: 3, name: "Period Tracker", to: "/PeriodTracker" },
   { id: 4, name: "ScheduleMeeting", to: "/ScheduleMeeting" },
   { id: 5, name: "Emergency", to: "/Emergency" },
@@ -69,7 +69,7 @@ function Header() {
                 textDecoration: "none",
               }}
             >
-              StreeShakti
+              Gyanguru
             </Typography>
 
             <Typography
