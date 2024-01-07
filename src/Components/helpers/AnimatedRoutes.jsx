@@ -5,6 +5,7 @@ import AppointmentForm from "../Pages/AppointmentForm";
 import { AnimatePresence } from "framer-motion";
 import Home from "../Pages/Home";
 import React from 'react';
+import Pomodoro from "../Pages/Pomodoro";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -15,6 +16,8 @@ const AnimatedRoutes = () => {
         <Route path="/AppointmentForm" element={<AppointmentForm/>} />
         <Route path="/ScheduleMeeting" element={<ScheduleMeeting/>} />
         <Route path="/PeriodTracker" element={<PeriodTracker/>} />
+        <Route path="/Pomodoro" element={<Pomodoro/>} />
+  
   
       </Routes>
     </AnimatePresence>

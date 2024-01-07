@@ -16,7 +16,7 @@ const Footer = () => {
               <h2>GyanGuru</h2>
             </div>
             <div className={classes.contact}>
-              <h4>Subsribe to our newsletter</h4>
+              <h4>Subscribe to our newsletter</h4>
               <button>Subscribe!</button>
             </div>
           </div>

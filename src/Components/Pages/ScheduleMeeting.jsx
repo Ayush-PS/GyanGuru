@@ -1,6 +1,6 @@
 // ScheduleMeeting.js
 import React, { useState } from "react";
-import { Button, TextField, Typography } from "@mui/material";
+import {TextField, Typography } from "@mui/material";
 import { format } from "date-fns";
 import { motion } from "framer-motion";
 import classes from "../Styles/ScheduleMeeting.module.css";
@@ -57,7 +57,7 @@ const ScheduleMeeting = () => {
         <Typography
           variant="h4"
           gutterBottom
-          color={"#052f58"}
+          color={"rgba(0, 0, 0, 0.883)"}
           fontWeight={"600"}
           margin={"1rem"}
         >
@@ -81,13 +81,9 @@ const ScheduleMeeting = () => {
           margin="normal"
           InputLabelProps={{ shrink: true }}
         />
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={handleScheduleMeeting}
-        >
-          Schedule
-        </Button>
+        
+       <button className={classes["bton"]}
+          onClick={handleScheduleMeeting}> Schedule</button>
         {scheduledMeeting && (
           <div className={classes["scheduled-meeting-info"]}>
             <Typography variant="h6" gutterBottom>

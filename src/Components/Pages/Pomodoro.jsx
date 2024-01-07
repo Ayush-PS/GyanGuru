@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
-import alarm from "../../assets/alarm.mp3";
+import alarm from "../../assests/alarm.mp3";
 import { motion } from "framer-motion";
-import classes from "../Styles/Medicine.module.css";
-const Medicine = () => {
+import classes from "../Styles/Pomodoro.module.css";
+const Pomodoro = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -112,19 +112,19 @@ const Medicine = () => {
     >
       <div className={classes.space}> </div>
       <div className={classes["msch-container"]}>
-        <h2>Medicine Scheduler</h2>
+        <h2>Pomodoro timer </h2>
         <div className={classes.input}>
-          <label htmlFor="taskName">Medicine Name: </label>
+          <label htmlFor="taskName">Pomodoro Name: </label>
           <input
             type="text"
             id="taskName"
             value={taskName}
-            placeholder="Medicine 1"
+            placeholder="Task 1"
             onChange={handleTaskNameChange}
           />
         </div>
         <div className={classes.input}>
-          <label htmlFor="alarmTime">Set alarm Time (24hr format): </label>
+          <label htmlFor="alarmTime">Set Closing time: </label>
           <input
             type="time"
             id="alarmTime"
@@ -133,20 +133,19 @@ const Medicine = () => {
           />
         </div>
         <button className={classes.btn} onClick={addTask}>
-          Add Medicine
+          Add Pomodoro
         </button>
         <div>
           {tasks.length ? (
-            <h3>Medicines with Time Left:</h3>
-          ) : (
-            <h3>Add your Medicines</h3>
+            <h3>Time Left:</h3>
+          ) : (<></>
           )}
           <ul>
             {tasks.map((task) => (
               <li key={task.id} className={classes.li}>
                 {`${task.name}`}
                 <br />
-                {`Time Left: ${formatTime(task.timeLeft)}`}
+                {`${formatTime(task.timeLeft)}`}
                 {!task.completed && (
                   <button
                     className={classes.btndel}
@@ -176,4 +175,4 @@ const Medicine = () => {
   );
 };
 
-export default Medicine;
+export default Pomodoro;

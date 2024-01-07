@@ -15,16 +15,16 @@ const PeriodTracker = () => {
   // Calculate 28 days after the selected date
   const calculateNextPeriodDate = () => {
     const nextPeriodDate = new Date(lastPeriodDate);
-    nextPeriodDate.setDate(nextPeriodDate.getDate() + 27);
+    nextPeriodDate.setDate(nextPeriodDate.getDate()-1);
     return nextPeriodDate;
   };
   // Calculate 18 to 24 days after the selected date
   const calculatePinkDatesRange = () => {
     const startDate = new Date(lastPeriodDate);
-    startDate.setDate(startDate.getDate() + 13);
+    startDate.setDate(startDate.getDate());
     
     const endDate = new Date(lastPeriodDate);
-    endDate.setDate(endDate.getDate() + 19);
+    endDate.setDate(endDate.getDate() + 4);
 
     return { startDate, endDate };
   };
@@ -32,28 +32,23 @@ const PeriodTracker = () => {
   const getTileContent = ({ date }) => {
     // Highlight the date 28 days after the selected date in red
     if (date.toISOString().split('T')[0] === calculateNextPeriodDate().toISOString().split('T')[0]) {
-      return <div style={{ backgroundColor: 'red', borderRadius: '50%', padding: '8px' }}></div>;
+      return <div style={{ backgroundColor: 'black', borderRadius: '50%', padding: '8px' }}></div>;
     }
 
     // Highlight the date 18 to 24 days after the selected date in pink
     const { startDate, endDate } = calculatePinkDatesRange();
     if (date >= startDate && date <= endDate) {
-      return <div style={{ backgroundColor: 'pink', borderRadius: '50%', padding: '8px' }}></div>;
+      return <div style={{ backgroundColor: 'gray', borderRadius: '50%', padding: '8px' }}></div>;
     }
     
     return null;
   };
 
-  const imgurl="https://static.vecteezy.com/system/resources/previews/014/273/466/non_2x/abstract-colorful-blob-shapes-element-design-free-png.png";
-  const imgurl2="https://i.pinimg.com/originals/c5/36/c9/c536c9cdd607000657528893e5005848.png";
-
   return (
     <div className={css.wrapper}>
-      <img src={imgurl} alt="" className={css.i1}/>
-      <img src={imgurl2} alt="" className={css.i2}/>
-      <h2>Period Tracker Calendar</h2>
+      <h2>Exams Schedule</h2>
       <div className={css.lastPeriod}>
-        <h3>Select Your Last Period Date</h3>
+        <h3>Select Your Exam Start Date</h3>
         <input
           type="date"
           value={lastPeriodDate.toISOString().split('T')[0]}
@@ -70,8 +65,8 @@ const PeriodTracker = () => {
       </div>
       <div className={css.specify}>
         <ul>
-          <li><CircleIcon className={css.icon1}/>: Ovulation Period</li><br/>
-          <li><CircleIcon className={css.icon2}/>: Your Next Period Date</li>
+          <li><CircleIcon className={css.icon1}/>: Exam Start Date</li><br/>
+          <li><CircleIcon className={css.icon2}/>: Other Exams</li><br/>
         </ul>
       </div>
     </div>
